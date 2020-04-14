@@ -1,0 +1,49 @@
+EN Readme
+Project for class subject Computer comunications and networks
+FIT VUT Brno
+Author: Michal Zelenák
+
+Task: Create a program - OpenweatherMap client that will be able to get selected information from a data source via HTTP queries. For access, you need to register for free and get the key for authentification.
+
+Solution: Server communication via socket library, extraction of data from received data, printing out required Data
+
+Installation: Downloading two files, makefile and ipk.py
+
+Launch: To the command line type: make run api_key:(key) city:(city), api_key is unique for each user, and each of them need their own, which can be obtained after free registration at:https://home.openweathermap.org/
+City is the name of the city for which the user wants to get the data.
+For example: make run api_key=7e75562e7745aafb1de27d1b35816a1b city="Ispir"
+
+Restrictions/Extensions: Various additional info can be added to output in the source code
+
+Error codes:
+	2 - Failed to create a socket
+	3 - Failed to connect to the server
+	4 - Failed to send data
+	5 - Error during data receiving
+	6 - Bad request, bad key, or bad name of the city
+
+-----------------------------------------------------------------------------------------------------
+
+SK Readme
+Projekt do predmetu Počítačové komunikace a sítě
+FIT VUT Brno
+Vypracoval: Michal Zelenák
+
+Zadanie: Vytvoriť program - klienta rozhrania OpenWeatherMap, ktorý bude schopný prostredníctvom HTTP dotazov získavať vybrané informáce z datového zdroja. Pre prístup je nutná bezplatná registrácia a získanie kľúča, ktorý sa putíva v dotazoch pre autenticáziu.
+
+Riešenie: Komunikácia so serverom pomocou knižnice socket, extrakcia dát z prijatej odpovedi, výpis požadovaných údajov
+
+Inštalácia: Stiahnutie súborov makefile, ipk.py
+
+Spustenie: v príkazovom riadku zadať príkaz make run api_key:(key) city:(city), api key musí mať užívateľ vlastný, získa ho po bezplatnej registrácii na adrese: https://home.openweathermap.org/
+city je názov mesta pre ktoré chce užívateľ získať údaje.
+napríklad: make run api_key=7e75562e7745aafb1de27d1b35816a1b city="Ispir"
+
+Obmedzenia/rozšírenie: V zdrojovom kóde je možné pridať na výstup rôzne ďalšie údaje podľa vzoru
+
+Kódy chýb:
+	2 - nepodarilo sa vytvoriť socket
+	3 - nepodarilo sa pripojiť k serveru
+	4 - nepodarilo sa odoslať dáta
+	5 - chyba počas príjmania dát
+	6 - Bad request, chyba v kľúči alebo v meste
